@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Гороскоп</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="/">Главная</a></li>
+            <li role="presentation"><a href="about">О гороскопе</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Гороскоп</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Гороскоп</h1>
+         <p class="lead">Узнайте ваш гороскоп на завтрашний день!</p>
+      </div>
+
+      % len_signs = len(signs)
+      % half = int(len_signs / 2)
+      
+      <div class="row marketing">
+        <div class="col-lg-6">
+          % for i in range(half):
+            <h4><a href="{{signs[i][0]}}">{{signs[i][0]}}</a></h4>
+            <p>{{signs[i][1]}}</p>
+          % end
+        </div>
+
+        <div class="col-lg-6">
+          % for i in range(half, len_signs):
+            <h4><a href="{{signs[i][0]}}">{{signs[i][0]}}</a></h4>
+            <p>{{signs[i][1]}}</p>
+          % end
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2015 Company, Inc.</p>
+      </footer>
+
+    </div>
+  </body>
+</html>
