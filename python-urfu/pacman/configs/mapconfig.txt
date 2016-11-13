@@ -1,0 +1,26 @@
+_=wall
+|=vertical_wall
+a=wall_bond1
+b=wall_bond2
+c=wall_bond3
+d=wall_bond4
+==double_wall
+h=double_vertical_wall
+/=double_wall_bond1
+\=double_wall_bond2
+[=double_wall_bond3
+]=double_wall_bond4
+i=double_wall_square_bond1
+j=double_wall_square_bond2
+k=double_wall_square_bond3
+l=double_wall_square_bond4
+ =empty
+.=dot
+*=big_dot
+-=line
+B=blinky
+I=inky
+M=pinky
+C=clyde
+P=pacman_left
+p=pacman_right

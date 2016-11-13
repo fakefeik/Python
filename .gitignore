@@ -1,2 +1,4 @@
 .idea
 token.txt
+__pycache__
+*.pyc
